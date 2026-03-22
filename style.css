@@ -27,11 +27,18 @@ body {
 
 h1 {
     font-size: 3em;
-    margin-top: 50px;
-    text-shadow: 3px 3px var(--title-shadow);
-    -webkit-text-stroke-width: 3.5px;
-    -webkit-text-stroke-color: var(--title-shadow);
+    margin-top: 50px;    
 }
+.h1-container{
+    position: relative;
+    z-index: 1;
+}
+.h1-kid{
+    position: absolute;
+    color: var(--title-shadow);
+    text-shadow: 5px 5px var(--title-shadow);
+}
+
 h2{
     margin-top: 25px;
 }
@@ -172,4 +179,17 @@ button:active {
 .author-info a {
     text-decoration: none;
     color: var(--font-color);
+}
+
+@media screen and (min-width:1280px) {
+    h1 {
+        font-size: 4em;
+            
+    }
+    h2,.nome-coin{
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1.25rem;
+    }
 }
